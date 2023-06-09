@@ -9,6 +9,15 @@ const NasaData = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      if (searchTerm === '') {
+        setImages([{
+          links: [{ href: 'https://designculture.com.br/wp-content/uploads/2018/01/nasa-logo-60-anos.png' }],
+          data: [{ title: 'Imagem Padrão' }] 
+        }]);
+        setLoading(false);
+        return;
+      }
+
       try {
         const response = await axios.get(`https://images-api.nasa.gov/search?q=${searchTerm}&media_type=image`);
         const responseData = response.data.collection.items;

@@ -3,7 +3,6 @@ import NasaImageList from './NasaImageList';
 
 const NasaDataDisplay = ({ loading, images, searchTerm, handleSearch }) => {
   return (
-    
     <div className="container" style={{maxWidth: "1400px"}}>
         <div className='mt-2 mb-2 rounded d-flex justify-content-between' style={{backgroundImage: 'url(https://img.freepik.com/fotos-gratis/nuvem-branca-no-ceu-azul_74190-2381.jpg?w=2000)'}}>
             <h1 style={{color: "white", padding: "5px"}}>Nasa Images API</h1>

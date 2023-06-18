@@ -1,0 +1,29 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "imageUrl": "https://images-assets.nasa.gov/image/PIA01973/PIA01973~thumb.jpg",
+      "id": 2
+    },
+    {
+      "imageUrl": "https://cdn.icon-icons.com/icons2/93/PNG/256/arrow_up_16741.png",
+      "id": 3
+    },
+    {
+      "imageUrl": "https://cdn.icon-icons.com/icons2/93/PNG/256/arrow_up_16741.png",
+      "id": 4
+    },
+    {
+      "imageUrl": "https://cdn.icon-icons.com/icons2/93/PNG/256/arrow_up_16741.png",
+      "id": 5
+    },
+    {
+      "imageUrl": "https://cdn.icon-icons.com/icons2/93/PNG/256/arrow_up_16741.png",
+      "id": 6
+    }
+  ]
+}

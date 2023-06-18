@@ -11,7 +11,7 @@ const NasaData = () => {
     const fetchData = async () => {
       if (searchTerm === '') {
         setImages([{
-          links: [{ href: 'https://designculture.com.br/wp-content/uploads/2018/01/nasa-logo-60-anos.png' }],
+          links: [{ href: 'https://i.ytimg.com/vi/mPcoBfQ5j-k/maxresdefault.jpg' }],
           data: [{ title: 'Imagem Padrão' }] 
         }]);
         setLoading(false);

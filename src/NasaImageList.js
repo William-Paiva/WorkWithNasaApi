@@ -15,6 +15,13 @@ const NasaImageList = ({ images }) => {
     }
   };
 
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="container" style={{ maxWidth: "1400px" }}>
       {images.map((image, index) => (
@@ -26,11 +33,14 @@ const NasaImageList = ({ images }) => {
           </div>
         ) : null
       ))}
-      <div style={{ position: 'fixed', bottom: '20px', left: '20px', zIndex: 9999, backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '10px', borderRadius: '5px' }}>
-        <img src='https://cdn.icon-icons.com/icons2/93/PNG/256/arrow_up_16741.png' alt="NASA Logo" style={{ width: "30px" }} onClick={() => handleClickImage('https://cdn.icon-icons.com/icons2/93/PNG/256/arrow_up_16741.png')} />
+      <div style={{ position: 'fixed', bottom: '20px', left: '20px', zIndex: 9999, backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '20px', borderRadius: '5px' }}>
+        <a href="#" onClick={handleScrollToTop}>
+          <img src='https://cdn.icon-icons.com/icons2/93/PNG/256/arrow_up_16741.png' alt="NASA Logo" style={{ width: "20px" }} />
+        </a>
       </div>
     </div>
   );
 };
 
 export default NasaImageList;
+

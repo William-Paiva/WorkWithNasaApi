@@ -10,10 +10,12 @@ const NasaData = () => {
   useEffect(() => {
     const fetchData = async () => {
       if (searchTerm === '') {
-        setImages([{
-          links: [{ href: 'https://i.ytimg.com/vi/mPcoBfQ5j-k/maxresdefault.jpg' }],
-          data: [{ title: 'Imagem Padrão' }] 
-        }]);
+        setImages([
+          {
+            links: [{ href: 'https://i.ytimg.com/vi/mPcoBfQ5j-k/maxresdefault.jpg' }],
+            data: [{ title: 'Imagem Padrão' }]
+          }
+        ]);
         setLoading(false);
         return;
       }
@@ -43,4 +45,5 @@ const NasaData = () => {
 };
 
 export default NasaData;
+
 
